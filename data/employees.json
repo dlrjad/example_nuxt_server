@@ -1,0 +1,32 @@
+[
+  {
+    "employeeId": 1,
+    "title": "Empleado 1",
+    "photo": "../employee1.png"
+  },
+  {
+    "employeeId": 2,
+    "title": "Empleado 2",
+    "photo": "../employee2.png"
+  },
+  {
+    "employeeId": 3,
+    "title": "Empleado 3",
+    "photo": "../employee2.png"
+  },
+  {
+    "employeeId": 4,
+    "title": "Empleado 4",
+    "photo": "../employee4.png"
+  },
+  {
+    "employeeId": 5,
+    "title": "Empleado 5",
+    "photo": "../employeeDefault.png"
+  },
+  {
+    "employeeId": 6,
+    "title": "Empleado 6",
+    "photo": "../employeeDefault.png"
+  }
+]

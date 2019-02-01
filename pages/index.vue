@@ -1,68 +1,34 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        example_nuxt_server
-      </h1>
-      <h2 class="subtitle">
-        project in NUXT
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
-    </div>
-  </section>
+  <div class="container">
+    <header>
+      <h1>Home</h1>
+    </header>
+    <nuxt-link
+      :to="`./info`"
+      class="btn btn-primary">Info</nuxt-link>
+    <nuxt-link
+      :to="`./contact`"
+      class="btn btn-primary">Contact</nuxt-link>
+    <nuxt-link
+      :to="`./todos`"
+      class="btn btn-primary">Stuff</nuxt-link>
+    <nuxt-link
+      :to="`./about`"
+      class="btn btn-primary">About</nuxt-link>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
-  }
+  name: 'IndexPage'
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
+<style scoped>
+.btn.btn-primary {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  flex-direction: column;
+  width: 10em;
+  margin: 5px 0;
 }
 </style>
