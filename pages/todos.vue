@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <header>
-      <h1>Lista de cosas {{counter}}</h1>
+      <h1>{{ $t('stuffpage.listStuff') }} {{counter}}</h1>
       <nuxt-link
         :to="`/`"
-        class="btn btn-primary">Home</nuxt-link>
+        class="btn btn-primary">{{ $t('home') }}</nuxt-link>
     </header>
     <div class="center">
       <ul>

@@ -1,5 +1,5 @@
 const pkg = require('./package')
-
+const { I18N } = require('./config')
 
 module.exports = {
   mode: 'universal',
@@ -42,7 +42,8 @@ module.exports = {
   */
   modules: [,
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    ['nuxt-i18n', I18N],
   ],
 
   /*

@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <header>
-      <h1>Info</h1>
+      <h1>{{ $t('info') }}</h1>
       <nuxt-link
         :to="`/`"
-        class="btn btn-primary">Home</nuxt-link>
+        class="btn btn-primary">{{ $t('home') }}</nuxt-link>
     </header>
     <div class="center">
       <div class="row justify-content-around">

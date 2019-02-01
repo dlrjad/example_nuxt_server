@@ -1,11 +1,26 @@
 <template>
   <div>
+    <div class="LangSwitcher">
+      <LangSwitcher  />
+    </div>
     <nuxt />
     <footer>VUE - NUXT<span>dlrjad 2019</span></footer>
   </div>
 </template>
 
+<script>
+import LangSwitcher from '~/components/LangSwitcher'
+export default {
+  components: {
+    LangSwitcher
+  }
+}
+</script>
+
 <style>
+.LangSwitcher {
+  margin: 2.3% 20px;
+}
 footer {
   position: absolute;
   right: 0;

@@ -1,26 +1,26 @@
 <template>
   <div class="container">
     <header>
-      <h1>Home</h1>
+      <h1>{{ $t('home') }}</h1>
     </header>
     <nuxt-link
       :to="`./info`"
-      class="btn btn-primary">Info</nuxt-link>
+      class="btn btn-primary">{{ $t('info') }}</nuxt-link>
     <nuxt-link
       :to="`./contact`"
-      class="btn btn-primary">Contact</nuxt-link>
+      class="btn btn-primary">{{ $t('contact') }}</nuxt-link>
     <nuxt-link
       :to="`./todos`"
-      class="btn btn-primary">Stuff</nuxt-link>
+      class="btn btn-primary">{{ $t('stuff') }}</nuxt-link>
     <nuxt-link
       :to="`./about`"
-      class="btn btn-primary">About</nuxt-link>
+      class="btn btn-primary">{{ $t('about') }}</nuxt-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
 }
 </script>
 

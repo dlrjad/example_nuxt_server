@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <header>
-      <h1>Información del empleado</h1>
+      <h1>{{ $t('infopage.employeeInformation') }}</h1>
       <nuxt-link
       :to="`/info`"
-      class="btn btn-primary">Volver</nuxt-link>
+      class="btn btn-primary">{{ $t('infopage.return') }}</nuxt-link>
     </header>
     <div class="center">
       <img :src="url" alt="photo">
