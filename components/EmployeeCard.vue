@@ -7,7 +7,7 @@
     <h4><strong>ID:</strong> {{ employee.employeeId }}</h4>
     <nuxt-link
       :to="`/employee/${employee.employeeId}`"
-      class="btn btn-primary">Ver empleado</nuxt-link>
+      class="btn btn-primary">{{ $t('infopage.seeEmployee')}}</nuxt-link>
   </div>
 </template>
 

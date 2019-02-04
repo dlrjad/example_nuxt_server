@@ -1,19 +1,19 @@
 <template>
   <div class="container">
     <header>
-      <h1>{{ $t('home') }}</h1>
+      <h1><font-awesome-icon icon="home"/> {{ $t('home') }}</h1>
     </header>
     <nuxt-link
-      :to="`./info`"
+      :to="`./`+locale+`info`"
       class="btn btn-primary">{{ $t('info') }}</nuxt-link>
     <nuxt-link
-      :to="`./contact`"
+      :to="`./`+locale+`contact`"
       class="btn btn-primary">{{ $t('contact') }}</nuxt-link>
     <nuxt-link
-      :to="`./todos`"
+      :to="`./`+locale+`todos`"
       class="btn btn-primary">{{ $t('stuff') }}</nuxt-link>
     <nuxt-link
-      :to="`./about`"
+      :to="`./`+locale+`about`"
       class="btn btn-primary">{{ $t('about') }}</nuxt-link>
   </div>
 </template>
@@ -21,6 +21,17 @@
 <script>
 export default {
   name: 'IndexPage',
+  data() {
+    return {
+      locale: '/'
+    }
+  },
+  created() {
+    this.locale = this.$i18n._vm.locale + this.locale
+    if(this.locale == 'en/') {
+      this.locale = ''
+    }
+  }
 }
 </script>
 

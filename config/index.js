@@ -21,6 +21,38 @@ const I18N = {
     }
   ],
   defaultLocale: 'en',
+  routes: {
+    'index': {
+      fr: '/page-principal',
+      en: '/home',
+      es: '/pagina-principal'
+    },
+    'about': {
+      fr: '/a-propos',
+      en: '/about-us',
+      es: '/acerca-de'
+    },
+    'todos': {
+      fr: '/choses',
+      en: '/stuff',
+      es: '/cosas'
+    },
+    'contact': {
+      fr: '/contact_fr',
+      en: '/contact',
+      es: '/contacto'
+    },
+    'employee': {
+      fr: '/information_fr',
+      en: '/information',
+      es: '/informacion'
+    },
+    'employee/_id': {
+      fr: '/information_fr/:id?',
+      en: '/information/:id?',
+      es: '/informacion/:id?'
+    }
+  },
   /*routes: {
     'about': {
       fr: '/a-propos',

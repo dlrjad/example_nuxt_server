@@ -10,15 +10,15 @@
     <div class="center">
       <form>
         <div class="form-group">
-          <label for="exampleInputEmail1">Email del usuario</label>
+          <label for="exampleInputEmail1">{{ $t('contactpage.userEmail') }}</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-          <small id="emailHelp" class="form-text text-muted">Campo obligatorio.</small>
+          <small id="emailHelp" class="form-text text-muted">{{ $t('contactpage.obligatoryField') }}</small>
         </div>
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Sugerencia</label>
+          <label for="exampleFormControlTextarea1">{{ $t('contactpage.query') }}</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-primary">{{ $t('contactpage.send') }}</button>
       </form>
     </div>
 

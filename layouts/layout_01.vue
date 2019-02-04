@@ -5,7 +5,7 @@
     </div>
     <nuxt />
     <footer>
-      VUE - NUXT
+      VUE - NUXT - Layout01
       <span>
         <font-awesome-icon :icon="['fab', 'facebook']"/>
         <font-awesome-icon :icon="['fab', 'instagram']"/>

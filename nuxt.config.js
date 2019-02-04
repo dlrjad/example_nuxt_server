@@ -28,22 +28,27 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~/assets/style.css'
+    '~/assets/style.css',
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    //'~/plugins/vue-flag-icon.js',
+    '~/plugins/font-awesome.js'
   ],
 
   /*
   ** Nuxt.js modules
   */
-  modules: [,
+  modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     ['nuxt-i18n', I18N],
+    'nuxt-fontawesome',
+    '@nuxtjs/font-awesome'
   ],
 
   /*
@@ -56,5 +61,17 @@ module.exports = {
     extend(config, ctx) {
 
     }
+  },
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      },
+      /*{
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['fab']
+      }*/
+    ]
   }
 }

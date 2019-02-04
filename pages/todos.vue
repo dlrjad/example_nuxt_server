@@ -12,9 +12,9 @@
           <input type="checkbox" :checked="todo.done" @change="toggle(todo)">
           <span :class="{ done: todo.done }">{{ todo.text }}</span>
         </li>
-        <li><input placeholder="Añade una tarea" @keyup.enter="addTodo"></li>
+        <li><input :placeholder="$t('stuffpage.addTask')" @keyup.enter="addTodo"></li>
       </ul>
-      <input type="button" value="eliminar" @click="removeItem">
+      <input type="button" class="btn btn-success" :value="$t('stuffpage.remove')" @click="removeItem">
     </div>
   </div>
 </template>
@@ -23,6 +23,7 @@
 import { mapMutations } from 'vuex'
 
 export default {
+  layout: 'layout_01',
   data() {
     return {
       counter: 0
@@ -68,5 +69,8 @@ input {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.btn.btn-success {
+  padding: 7px;
 }
 </style>
